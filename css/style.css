@@ -42,6 +42,48 @@ header nav ul li a {
     border-radius: 15px;
 }
 
+
+header nav ul li a:hover {
+    animation: navegador 1s linear 1ms;
+}
+
+
+/* -------------------------------- keyframes ------------------------------- */
+
+@keyframes navegador {
+    20% {
+        font-size: 21px;
+        background-color: rgb(229, 226, 200);
+        color: #793a84;
+    }
+
+    40% {
+        font-size: 22px;
+        background-color: rgb(229, 226, 200);
+        color: #793a84;
+    }
+
+    60% {
+        font-size: 23px;
+        background-color: rgb(229, 226, 200);
+        color: #793a84;
+    }
+
+    80% {
+        font-size: 24px;
+        background-color: rgb(229, 226, 200);
+        color: #793a84;
+    }
+
+    100% {
+        font-size: 25px;
+        background-color: #793a84;
+        color: white;
+
+    }
+
+}
+
 /* ---------------------------------- main ---------------------------------- */
 
 .bancos img {
@@ -127,7 +169,14 @@ header nav ul li a {
     justify-content: center;
     overflow: auto;
     align-items: center;
+    transition: 2s;
 }
+
+.promociones div div:hover {
+    transform: scale(1.2);
+}
+
+
 
 .promociones div div img {
 
@@ -141,7 +190,7 @@ header nav ul li a {
 .promociones div div h3 {
 
     /* ------------------------------- titulo box ------------------------------- */
-    background-color: #793a84;
+    background-image: linear-gradient(to bottom, #793a84, white);
     padding: 5px;
     text-decoration: none;
     text-align: center;
@@ -204,13 +253,24 @@ header nav ul li a {
 /* ------------------------------- boton fixed ------------------------------ */
 
 .boton-fixed img {
-    width: 30%;
-    height: 30%;
+    width: 10%;
+    height: 10%;
     position: fixed;
     right: 20PX;
     bottom: 50px;
     opacity: 0.5;
+    transition: 5s;
+
 }
+
+.boton-fixed img:hover {
+    opacity: 1;
+    width: 30%;
+    height: 30%;
+    transform: translate(-70%);
+}
+
+
 
 /* ------------------------- formulario de contacto ------------------------- */
 
@@ -282,6 +342,11 @@ footer div a img {
     width: 75px;
     height: 75px;
     padding: 15px;
+    transition: 2s;
+}
+
+footer div a img:hover {
+    transform: scale(1.4);
 }
 
 .redes-sociales {
