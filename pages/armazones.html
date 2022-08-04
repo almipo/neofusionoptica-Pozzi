@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------------------- css bootstrap ---------------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- --------------------------------- css --------------------------------- -->
     <link rel="stylesheet" href="../css/style.css">
     <title>neofusion</title>
 </head>
@@ -12,62 +16,115 @@
 <body>
     <header>
         <img src="../img/logoynombre.png" alt="logo">
+
+
         <!-- ------------------------- menu de navegacion -------------------------- -->
-        <nav>
-            <ul>
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="./armazones.html">armazones</a></li>
-                <li><a href="./lentesdecontacto.html">lentes de contacto</a></li>
-                <li><a href="./lentesdesol.html">lentes de sol</a></li>
-                <li><a href="./contacto.html">contacto</a></li>
-                <li><a href="../index.html#pie">como llegar</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-end">
+            <div class="container-fluid justify-content-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./armazones.html">ARMAZONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./lentesdecontacto.html">LENTES DE CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./lentesdesol.html">LENTES DE SOL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#pie">COMO LLEGAR</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
+        <section>
+            <h2 class="armazones">ARMAZONES</h2>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
 
-        <section class="promociones">
+                <div class="carousel-inner container">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <div class="row">
+                            <img src="../img/armazon rusty1.jpg" class="d-block w-50 container" alt="armazon1">
+                        </div>
 
-            <!-- -----ARMAZONES CON IMAGENES, MARCA Y MODELO ----- -->
-
-
-            <h2>ARMAZONES</h2>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>RUSTY</h5>
+                            <p>
+                                MODELO: MBLK - 125870.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/armazon rusty2.jpg" class="d-block w-50 container" alt="armazon2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>RUSTY</h5>
+                            <p>
+                                MODELO: LGREY - 113272</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/armazon rusty3.jpg" class="d-block w-50 container" alt="armazon3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>RUSTY</h5>
+                            <p>
+                                MODELO: M020 - 128172.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/armazon rusty4.jpg" class="d-block w-50 container" alt="armazon4">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>RUSTY</h5>
+                            <p>
+                                MODELO: SIL BLK - 125316</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../img/armazon rusty5.jpg" class="d-block w-50 container" alt="armazon5">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>RUSTY</h5>
+                            <p>
+                                MODELO: MBLK - 125860.</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h3>Lorem ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h3>Lorem ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
         </section>
-
-
     </main>
     <footer>
         <!-- --------------------------- redes sociales ---------------------------- -->
@@ -79,6 +136,11 @@
                 target="_blank"><img src="../img/whatsapp.png" alt="whatspp"></a>
         </div>
     </footer>
+    <!-- --------------------------- bootstrap js ---------------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -24,13 +24,14 @@ header img {
 
 
 
-header nav ul li {
+.nav-item {
     display: inline-block;
     text-align: center;
     margin: 10px 10px 10px 10px;
+
 }
 
-header nav ul li a {
+.nav-link {
     text-decoration: none;
     font-size: 20px;
     font-style: normal;
@@ -38,8 +39,23 @@ header nav ul li a {
     font-family: 'Roboto', sans-serif;
     color: white;
     background-color: #793a84;
+    opacity: 0.75;
     padding: 5px;
     border-radius: 15px;
+}
+
+.navbar-toggler {
+    background-color: #793a84;
+    opacity: 0.75;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-toggler-icon {
+    color: white;
 }
 
 
@@ -51,6 +67,11 @@ header nav ul li a:hover {
 /* -------------------------------- keyframes ------------------------------- */
 
 @keyframes navegador {
+    0% {
+        color: white
+    }
+
+
     20% {
         font-size: 21px;
         background-color: rgb(229, 226, 200);
@@ -140,6 +161,7 @@ header nav ul li a:hover {
 
     /* ------------------------------- propiedades del texto promocion ------------------------------- */
     background-color: #793a84;
+    opacity: 0.75;
     padding: 20px;
     margin: 10px 0 10px 0;
     text-decoration: none;
@@ -154,10 +176,31 @@ header nav ul li a:hover {
 
 }
 
+
+
+
+/* -------------------------- propiedades armazones ------------------------- */
+
+.armazones {
+    background-color: #793a84;
+    opacity: 0.75;
+    padding: 20px;
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+
+
+}
+
+/* ----------------------------- propiedades box ---------------------------- */
 .promociones div div {
-
-    /* ----------------------------- propiedades box ---------------------------- */
-
     width: 250px;
     height: 450px;
     border: 1px solid black;
@@ -200,6 +243,7 @@ header nav ul li a:hover {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     color: white;
+    opacity: 0.75;
 }
 
 .promociones div div p {
@@ -272,9 +316,10 @@ header nav ul li a:hover {
 
 
 
+
 /* ------------------------- formulario de contacto ------------------------- */
 
-.formulario form div label {
+.form-label {
     text-decoration: none;
     padding: 5px;
     font-size: 20px;
@@ -283,37 +328,18 @@ header nav ul li a:hover {
     font-family: 'Roboto', sans-serif;
     color: #793a84;
     text-align: center;
-
+    margin: 10px;
 }
 
-.formulario form div p {
-    text-decoration: none;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    color: #793a84;
 
-    padding: 10px;
-}
-
-.formulario form div input {
+.form-control {
     width: 40%;
     display: flex;
     flex-direction: column;
     border: 3px solid #793a84;
     border-radius: 4px;
-    padding: 15px 20px;
-    margin: 5px 0;
-    box-sizing: border-box;
-}
-
-.formulario form div textarea {
-    width: 40%;
-    border: 3px solid #793a84;
-    border-radius: 4px;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 5px 15px;
+    margin: 5px;
     box-sizing: border-box;
 }
 
@@ -355,9 +381,126 @@ footer div a img:hover {
 
 }
 
+/* -------------------- galeria de imagenes lentes de sol ------------------- */
+
+.lentes div h3 {
+    background-image: linear-gradient(to bottom, #793a84, white);
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    opacity: 0.75;
+}
+
+.lentes div p {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #793a84;
+}
+
+.lentes div {
+    width: 200px;
+    height: 350px;
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+    justify-content: center;
+}
+
+.lentes div img {
+    height: 150px;
+    width: 180px;
+    border-radius: 15px 0px 0px 15px;
+    justify-content: center;
+}
+
+/* ------------------------- menu acordeon lentes de contacto bootstrap ------------------------ */
+
+.acordeon h2 {
+    background-color: #793a84;
+    opacity: 0.8;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+.accordion-item:first-of-type .accordion-button {
+    background-color: #793a84;
+
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.accordion-button {
+    background-color: #793a84;
+    opacity: 0.75;
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #793a84;
+    opacity: 0.75;
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+.accordion-body {
+    background-color: rgb(229, 226, 200);
+    opacity: 0.75;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+
 /* --------------- grid galeria de imagenes lentes de contacto -------------- */
+
 .lentes h2 {
     background-color: #793a84;
+    opacity: 0.75;
     padding: 20px;
     margin: 10px 0 10px 0;
     text-decoration: none;
@@ -369,6 +512,7 @@ footer div a img:hover {
     font-family: 'Roboto', sans-serif;
     color: white;
 }
+
 
 .grid-container {
     display: grid;
@@ -400,6 +544,7 @@ footer div a img:hover {
 
 .grid-item h3 {
     background-color: #793a84;
+    opacity: 0.75;
     padding: 5px;
     text-decoration: none;
     text-align: center;
@@ -452,9 +597,11 @@ footer div a img:hover {
     grid-column-end: 5;
 }
 
+
 /* ------------------------------ media queries ----------------------------- */
 
 /* -------------------------- responsive max-width -------------------------- */
+
 @media screen and (max-width:1000px) {
     header nav ul li {
         margin: 5px;
@@ -511,38 +658,46 @@ footer div a img:hover {
 @media screen and (max-width:600px) {
     .promociones h2 {
         font-size: 25px;
-
     }
 
-    .promociones div {
-        flex-direction: column;
-        text-align: center;
+    .armazones {
+        font-size: 25px;
     }
 
-    #pie iframe {
-        width: 100%;
-        height: 50vh;
-    }
+}
 
-    #pie {
-        display: flex;
-        flex-direction: column;
-    }
+.promociones div {
+    flex-direction: column;
+    text-align: center;
+}
 
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 250px;
-    }
+#pie iframe {
+    width: 100%;
+    height: 50vh;
+}
 
-    .grid-item {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
+#pie {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+}
+
+.grid-item {
+    grid-column: span 1;
+    grid-row: span 1;
 }
 
 
 @media screen and (max-width:537px) {
     .lentes h2 {
+        font-size: 20px;
+    }
+
+    .acordeon h2 {
         font-size: 20px;
     }
 }
@@ -583,6 +738,14 @@ footer div a img:hover {
     }
 
     .promociones h2 {
+        font-size: 20px;
+    }
+
+    .acordeon h2 {
+        font-size: 20px;
+    }
+
+    .armazones {
         font-size: 20px;
     }
 
