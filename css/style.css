@@ -181,7 +181,7 @@ header nav ul li a:hover {
 
 /* -------------------------- propiedades armazones ------------------------- */
 
-.armazones {
+.armazones h2 {
     background-color: #793a84;
     opacity: 0.75;
     padding: 20px;
@@ -420,16 +420,16 @@ footer div a img:hover {
 
 .lentes div img {
     height: 150px;
-    width: 180px;
+    max-width: 180px;
     border-radius: 15px 0px 0px 15px;
-    justify-content: center;
+    justify-content: center
 }
 
 /* ------------------------- menu acordeon lentes de contacto bootstrap ------------------------ */
 
 .acordeon h2 {
     background-color: #793a84;
-    opacity: 0.8;
+    opacity: 0.75;
     padding: 5px;
     margin: 5px 0 5px 0;
     text-decoration: none;
@@ -495,12 +495,10 @@ footer div a img:hover {
     font-family: 'Roboto', sans-serif;
 }
 
-
 /* --------------- grid galeria de imagenes lentes de contacto -------------- */
-
 .lentes h2 {
     background-color: #793a84;
-    opacity: 0.75;
+    opacity: 0.8;
     padding: 20px;
     margin: 10px 0 10px 0;
     text-decoration: none;
@@ -513,8 +511,7 @@ footer div a img:hover {
     color: white;
 }
 
-
-.grid-container {
+.grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 300px 300px;
@@ -524,7 +521,7 @@ footer div a img:hover {
 
 
 .grid-item {
-    width: 100%;
+    
     border: 1px solid black;
     text-align: center;
     border-radius: 15px;
@@ -544,7 +541,6 @@ footer div a img:hover {
 
 .grid-item h3 {
     background-color: #793a84;
-    opacity: 0.75;
     padding: 5px;
     text-decoration: none;
     text-align: center;
@@ -596,7 +592,6 @@ footer div a img:hover {
     grid-column-start: 3;
     grid-column-end: 5;
 }
-
 
 /* ------------------------------ media queries ----------------------------- */
 
