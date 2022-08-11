@@ -1,0 +1,749 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+
+
+/* --------------------------------- reseteo -------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------------------- header --------------------------------- */
+header {
+    background-color: white;
+
+}
+
+header img {
+    /* ----------------------------- imagen empresa ----------------------------- */
+    width: 350px;
+    height: 75px;
+}
+
+/* --------------------- propiedades barra de navegacion -------------------- */
+
+
+
+.nav-item {
+    display: inline-block;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #793a84;
+    opacity: 0.75;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.navbar-toggler {
+    background-color: #793a84;
+    opacity: 0.75;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+
+header nav ul li a:hover {
+    animation: navegador 1s linear 1ms;
+}
+
+
+/* -------------------------------- keyframes ------------------------------- */
+
+@keyframes navegador {
+    0% {
+        color: white
+    }
+
+
+    20% {
+        font-size: 21px;
+        background-color: rgb(229, 226, 200);
+        color: #793a84;
+    }
+
+    40% {
+        font-size: 22px;
+        background-color: rgb(229, 226, 200);
+        color: #793a84;
+    }
+
+    60% {
+        font-size: 23px;
+        background-color: rgb(229, 226, 200);
+        color: #793a84;
+    }
+
+    80% {
+        font-size: 24px;
+        background-color: rgb(229, 226, 200);
+        color: #793a84;
+    }
+
+    100% {
+        font-size: 25px;
+        background-color: #793a84;
+        color: white;
+
+    }
+
+}
+
+/* ---------------------------------- main ---------------------------------- */
+
+.bancos img {
+
+    /* ------------------- propiedades img promocion bancaria ------------------- */
+
+    height: auto;
+    width: 100%;
+
+}
+
+.local {
+
+    /* ---------------------- propiedades imagen principal ---------------------- */
+
+    height: 80vh;
+    width: auto;
+    background-image: url("../img/local.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-direction: column;
+}
+
+/* ------------------------------ propiedades texto imagen ------------------------------ */
+
+.local h1 {
+    text-decoration: none;
+    text-align: center;
+    font-size: 100px;
+    letter-spacing: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.local p {
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-style: normal;
+    font-weight: 10;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+
+/* ------------------------- productos en promocion ------------------------- */
+
+.promociones h2 {
+
+    /* ------------------------------- propiedades del texto promocion ------------------------------- */
+    background-color: #793a84;
+    opacity: 0.75;
+    padding: 20px;
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+
+}
+
+
+
+
+/* -------------------------- propiedades armazones ------------------------- */
+
+.armazones h2 {
+    background-color: #793a84;
+    opacity: 0.75;
+    padding: 20px;
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+
+
+}
+
+/* ----------------------------- propiedades box ---------------------------- */
+.promociones div div {
+    width: 250px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+    display: inline-block;
+    justify-content: center;
+    overflow: auto;
+    align-items: center;
+    transition: 2s;
+}
+
+.promociones div div:hover {
+    transform: scale(1.2);
+}
+
+
+
+.promociones div div img {
+
+    /* ------------------------------- imagen box ------------------------------- */
+
+    height: 200px;
+    width: 250px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.promociones div div h3 {
+
+    /* ------------------------------- titulo box ------------------------------- */
+    background-image: linear-gradient(to bottom, #793a84, white);
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    opacity: 0.75;
+}
+
+.promociones div div p {
+
+    /* ----------------------- descripcion de producto box ---------------------- */
+
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #793a84;
+}
+
+
+/* --------------------------------- banners -------------------------------- */
+
+.banner img {
+    width: 100%;
+    height: 50%;
+
+}
+
+/* -------------------------------- ubicacion ------------------------------- */
+
+#pie {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: space-evenly;
+}
+
+#pie ul {
+    list-style: none;
+}
+
+#pie ul li {
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #793a84;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* ------------------------------- boton fixed ------------------------------ */
+
+.boton-fixed img {
+    width: 10%;
+    height: 10%;
+    position: fixed;
+    right: 20PX;
+    bottom: 50px;
+    opacity: 0.5;
+    transition: 5s;
+
+}
+
+.boton-fixed img:hover {
+    opacity: 1;
+    width: 30%;
+    height: 30%;
+    transform: translate(-70%);
+}
+
+
+
+
+/* ------------------------- formulario de contacto ------------------------- */
+
+.form-label {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #793a84;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.form-control {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #793a84;
+    border-radius: 4px;
+    padding: 5px 15px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.botones input {
+    width: auto;
+    background-color: #793a84;
+    border: none;
+    color: white;
+    padding: 16px 25px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15;
+    font-weight: bold;
+}
+
+
+/* --------------------------------- footer --------------------------------- */
+
+footer div {
+    background-color: rgb(229, 226, 200);
+}
+
+footer div a img {
+    width: 75px;
+    height: 75px;
+    padding: 15px;
+    transition: 2s;
+}
+
+footer div a img:hover {
+    transform: scale(1.4);
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* -------------------- galeria de imagenes lentes de sol ------------------- */
+
+.lentes div h3 {
+    background-image: linear-gradient(to bottom, #793a84, white);
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    opacity: 0.75;
+}
+
+.lentes div p {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #793a84;
+}
+
+.lentes div {
+    width: 200px;
+    height: 350px;
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+    justify-content: center;
+}
+
+.lentes div img {
+    height: 150px;
+    max-width: 180px;
+    border-radius: 15px 0px 0px 15px;
+    justify-content: center
+}
+
+/* ------------------------- menu acordeon lentes de contacto bootstrap ------------------------ */
+
+.acordeon h2 {
+    background-color: #793a84;
+    opacity: 0.75;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+.accordion-item:first-of-type .accordion-button {
+    background-color: #793a84;
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.accordion-button {
+    background-color: #793a84;
+    opacity: 0.75;
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #793a84;
+    opacity: 0.75;
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+.accordion-body {
+    background-color: rgb(229, 226, 200);
+    opacity: 0.75;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* --------------- grid galeria de imagenes lentes de contacto -------------- */
+.acordeon h2 {
+    background-color: #793a84;
+    opacity: 0.8;
+    padding: 20px;
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 15px;
+    position: relative;
+}
+
+
+.grid-item {
+
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+    overflow: auto;
+    align-items: center;
+    box-shadow: 21px 22px 35px 20px rgba(0, 0, 0, 0.49);
+    -moz-background-inline-policy: 21px 22px 35px 20px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 21px 22px 35px 20px rgba(0, 0, 0, 0.49);
+}
+
+.grid-item img { 
+    width: 40%;
+    object-fit: contain;
+
+}
+
+.grid-item h3 {
+    background-color: #793a84;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.grid-item p {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #793a84;
+}
+
+.primer-item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.segundo-item {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.tercer-item {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.cuarto-item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.quinto-item {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.sexto-item {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+/* ------------------------------ media queries ----------------------------- */
+
+/* -------------------------- responsive max-width -------------------------- */
+
+@media screen and (max-width:1000px) {
+    header nav ul li {
+        margin: 5px;
+    }
+
+    header nav ul li a {
+        font-size: 15px;
+        padding: 4px;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .lentes h2 {
+        font-size: 40px;
+    }
+}
+
+
+
+@media screen and (max-width:715px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .local h1 {
+        font-size: 50px;
+    }
+
+    .local p {
+        font-size: 20px;
+    }
+
+    #pie ul li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:635px) {
+    .lentes h2 {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .promociones h2 {
+        font-size: 25px;
+    }
+
+    .armazones {
+        font-size: 25px;
+    }
+
+
+    .promociones div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #pie iframe {
+        width: 100%;
+        height: 50vh;
+    }
+
+    #pie {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 250px;
+    }
+
+    .grid-item {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+@media screen and (max-width:537px) {
+    .lentes h2 {
+        font-size: 20px;
+    }
+
+    .acordeon h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:521px) {
+    .boton-fixed {
+        display: none;
+    }
+
+    .promociones div div {
+        width: 200px;
+        height: 400px;
+
+    }
+}
+
+@media screen and (max-width:430px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+    }
+
+    .grid-item {
+        grid-column: 1px;
+        grid-row: 1px;
+    }
+}
+
+
+@media screen and (max-width:389px) {
+    header img {
+        width: 80%;
+        height: 10%;
+    }
+
+    .local {
+        display: none;
+    }
+
+    .promociones h2 {
+        font-size: 20px;
+    }
+
+    .acordeon h2 {
+        font-size: 20px;
+    }
+
+    .armazones {
+        font-size: 20px;
+    }
+
+    .promociones div div {
+        width: 200px;
+        height: 350px;
+    }
+}

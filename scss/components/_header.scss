@@ -1,0 +1,91 @@
+body{
+    header{ 
+        background-color: $color-tercero;
+        img{
+            width: 350px;
+            height: 75px;
+        }
+        nav{
+            div{
+                button{
+                    .navbar-toggler{ 
+                        background-color: $color-principal;
+                        opacity: 0.75;
+                    }
+                    .navbar-toggler-icon{
+                        color:$color-tercero;
+                    }
+                }
+                div{
+                    ul{
+                        li{
+                            .nav-item{
+                                display: inline-block;
+                                text-align: center;
+                                margin: 10px 10px 10px 10px;
+                            }
+                            .nav-link{ 
+                                text-decoration: none;
+                                font-size: 20px;
+                                text-align: center;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-family: 'Roboto', sans-serif;
+                                color:$color-tercero;
+                                background-color:$color-principal;
+                                opacity: 0.75;
+                                padding: 5px;
+                                border-radius: 15px;
+                                margin: 2px;
+                            }
+                            a{
+                                &:hover{animation: navegador 1s linear 1ms;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ----------------------------- key frames nav ----------------------------- */
+@keyframes navegador {
+    0% {
+        color: $color-tercero;
+    }
+
+
+    20% {
+        font-size: 21px;
+        background-color: $color-secundario;
+        color:$color-principal;
+    }
+
+    40% {
+        font-size: 22px;
+        background-color: $color-secundario;
+        color:$color-principal
+    }
+
+    60% {
+        font-size: 23px;
+        background-color:$color-secundario;
+        color: $color-principal;
+    }
+    80% {
+        font-size: 24px;
+        background-color: $color-secundario;
+        color:$color-principal;
+    }
+
+    100% {
+        font-size: 25px;
+        background-color: $color-principal;
+        color: $color-tercero;
+
+    }
+
+}
