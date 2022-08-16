@@ -2,18 +2,18 @@ body{
     main{
         .lentes{
             h2{
-                background-color: $color-principal;
-                opacity: 0.75;
-                padding: 20px;
+                background-color: map-get($titulo, bc-titulo);
+                opacity: map-get($titulo, opacidad);
+                padding:map-get($titulo, pad);
                 margin: 10px 0 10px 0;
                 text-decoration: none;
-                text-align: center;
+                text-align: map-get($titulo, alineacion );
                 font-size: 50px;
                 letter-spacing: 10px;
-                font-style: normal;
-                font-weight: bold;
+                font-style:map-get($titulo, estilo-fuente);
+                font-weight: map-get($titulo, weig );
                 font-family: $fuente-principal;
-                color: $color-tercero;
+                color: map-get($titulo, color-titulo );
             }
             div{
                 div{
@@ -44,8 +44,7 @@ body{
                             color: $color-tercero;
                             opacity: 0.75;}
                         p{
-                            text-decoration: none;
-                            text-align: center;
+                            @include text (center, none);
                             font-size: 15px;
                             letter-spacing: 2px;
                             font-style: normal;

@@ -4,3 +4,15 @@ $color-tercero:white;
 $color-cuarto:black;
 
 
+//*extends
+
+%flex{
+    display: flex;
+    justify-content: center;
+}
+
+//*mixin
+@mixin text ($align, $decoracion){
+    text-align: $align;
+    text-decoration: $decoracion;
+}

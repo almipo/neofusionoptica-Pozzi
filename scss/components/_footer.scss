@@ -1,8 +1,7 @@
 footer{
     .redes-sociales{
         background-color: $color-secundario;
-        display: flex;
-        justify-content: center;
+        @extend %flex;
         a{
             img{
                 width: 75px;
