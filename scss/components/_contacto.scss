@@ -1,16 +1,24 @@
 body{
     .formulario{
-        div{
+        background-image: url(../img/imagencontactos.jpg) ;
+        opacity: 0.75;
+        object-fit: contain;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        div{ 
+            display:block;
             .form-label{
             text-decoration: none;
             padding: 5px;
             font-size: 20px;
             font-style: normal;
-            font-weight: bold;
             font-family: $fuente-principal;
-            color: $color-principal;
+            color: white;
             text-align: center;
             margin: 10px;
+            font-weight:700;
             }
             .form-control{
                 width: 40%;
@@ -36,8 +44,9 @@ body{
                 font-family: $fuente-principal;
                 font-size: 15;
                 font-weight: bold;
+                align-items: center;
+                justify-content: center;
             }
         }
-
     }
-}
+}   

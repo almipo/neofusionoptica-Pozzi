@@ -25,6 +25,8 @@ body{
                                 margin: 10px 10px 10px 10px;
                             }
                             .nav-link{ 
+                                background-color:$color-principal;
+                                opacity: 0.60;
                                 text-decoration: none;
                                 font-size: 20px;
                                 text-align: center;
@@ -32,8 +34,6 @@ body{
                                 font-weight: bold;
                                 font-family: 'Roboto', sans-serif;
                                 color:$color-tercero;
-                                background-color:$color-principal;
-                                opacity: 0.75;
                                 padding: 5px;
                                 border-radius: 15px;
                                 margin: 2px;

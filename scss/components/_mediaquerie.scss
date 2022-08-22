@@ -1,3 +1,9 @@
+@media screen and (max-width:1150px) {
+    body main #pie ul div img{
+        width: 150px;
+        height: 150px;
+    }
+}
 
 @media screen and (max-width:1000px) {
     body header nav ul li {
@@ -8,11 +14,40 @@
         font-size: 15px;
         padding: 4px;
     }
+    body main .grid-container div p{
+        font-size: 20px;
+
+    }
+    body main #pie ul div img{
+        width: 125px;
+        height: 125px;
+    }
+}
+
+@media screen and (max-width:864px){
+    body main .promociones div div p {
+        font-size: 16px;
+    }
+
 }
 
 @media screen and (max-width:760px) {
     body main .lentes h2 {
         font-size: 40px;
+    }
+    body main .grid-container1 div p{
+        font-size: 13px;
+
+    }
+    body main .grid-container1 .galeria {
+        --s: 200px;
+    }
+    body main .promociones div div p {
+        font-size: 13px;
+    }
+    body main #pie ul div img{
+        width: 95px;
+        height: 95px;
     }
 }
 
@@ -41,16 +76,37 @@
         text-align: center;
         margin: 10px;
     }
-}
-
-@media screen and (max-width:635px) {
-    body main .lentes h2 {
-        font-size: 30px;
+    body main .promociones div div p {
+        font-size: 13px;
     }
 }
 
+@media screen and (max-width:670px){
+    body main .promociones div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    body main .promociones div div p {
+        font-size: 16px;
+    }
+
+    body main .lentes h2 {
+        font-size: 30px;
+    }
+    body main #pie ul div img{
+        width: 90px;
+        height: 90px;
+    }
+}
 
 @media screen and (max-width:600px) {
+    body main .local {
+        height: 50vh;
+        width: auto;
+    }
     body main .promociones h2 {
         font-size: 25px;
     }
@@ -60,11 +116,6 @@
     }
 
 
-    body main .promociones div {
-        flex-direction: column;
-        text-align: center;
-    }
-
     body main #pie iframe {
         width: 100%;
         height: 50vh;
@@ -73,6 +124,9 @@
     body main #pie {
         display: flex;
         flex-direction: column;
+    }
+    body main #pie ul div img{
+        display: none;
     }
 
     body main .lentes .grid-container {
@@ -104,19 +158,26 @@
     body main .promociones div div {
         width: 200px;
         height: 400px;
+    }
 
+    body main .grid-container1{
+        display: none;
     }
 }
 
 @media screen and (max-width:430px) {
     body main .lentes .grid-container {
         grid-template-columns: 1fr;
-        grid-auto-rows: 250px;
+        grid-auto-rows: 200px;
     }
 
     body main .lentes .grid-container .grid-item {
         grid-column: 1px;
         grid-row: 1px;
+    }
+    body main .local {
+        height: 40vh;
+        width: auto;
     }
 }
 
@@ -128,7 +189,14 @@
     }
 
     body main .local {
-        display: none;
+        height: 20vh;
+        width: auto;
+    }
+    body main .local h1 {
+        font-size: 30px;
+    }
+    body main .local p{
+        font-size:15px ;
     }
 
     body main .promociones h2 {
