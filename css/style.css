@@ -17,7 +17,8 @@ body header {
   body header nav div div ul li .nav-item {
     display: inline-block;
     text-align: center;
-    margin: 10px 10px 10px 10px; }
+    margin: 10px 10px 10px 10px;
+    padding: 10px; }
   body header nav div div ul li .nav-link {
     background-color: #793a84;
     opacity: 0.60;
@@ -28,9 +29,9 @@ body header {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     color: white;
-    padding: 5px;
+    padding: 8px;
     border-radius: 15px;
-    margin: 2px; }
+    margin: 7px; }
   body header nav div div ul li a:hover {
     animation: navegador 1s linear 1ms; }
 
@@ -434,7 +435,9 @@ body .formulario {
   object-fit: contain;
   background-position: top;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center; }
   body .formulario div {
     display: block; }
     body .formulario div .form-label {
@@ -455,7 +458,9 @@ body .formulario {
       border-radius: 4px;
       padding: 5px 15px;
       margin: 5px;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center; }
   body .formulario .botones input {
     width: auto;
     background-color: #793a84;

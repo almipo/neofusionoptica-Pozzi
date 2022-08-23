@@ -6,6 +6,8 @@ body{
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
 
         div{ 
             display:block;
@@ -29,6 +31,8 @@ body{
                 padding: 5px 15px;
                 margin: 5px;
                 box-sizing: border-box;
+                justify-content: center;
+                align-items: center;
             }
         }
         .botones{
