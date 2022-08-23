@@ -21,21 +21,16 @@ body{
                 font-family: $fuente-principal;
                 color: map-get($titulo, color-titulo );
             }
-            div{ 
-                display: grid;
-                justify-content: center;               
+            div{        
                 div{   
-                    display: inline-block;
-
                     div{
                         width: 200px;
                         height: 350px;
                         border: 1px solid $color-cuarto;
-                        margin: 10px;
+                        margin: 20px;
                         text-align: center;
                         border-radius: 15px;
                         background-color: $color-tercero;
-                        align-items: center;
 
                         img{
                             height: 150px;
