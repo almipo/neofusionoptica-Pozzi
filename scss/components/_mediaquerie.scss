@@ -1,5 +1,5 @@
 @media screen and (max-width:1150px) {
-    body main #pie ul div img{
+    body main #pie ul li img{
         width: 150px;
         height: 150px;
     }
@@ -18,7 +18,7 @@
         font-size: 20px;
 
     }
-    body main #pie ul div img{
+    body main #pie ul li img{
         width: 125px;
         height: 125px;
     }
@@ -27,6 +27,10 @@
 @media screen and (max-width:864px){
     body main .promociones div div p {
         font-size: 16px;
+    }
+    body main #pie ul li img{
+        width: 95px;
+        height: 95px;
     }
 
 }
@@ -45,10 +49,6 @@
     body main .promociones div div p {
         font-size: 13px;
     }
-    body main #pie ul div img{
-        width: 95px;
-        height: 95px;
-    }
 }
 
 @media screen and (max-width:715px) {
@@ -62,7 +62,7 @@
         flex-direction: column;
     }
 
-    body main .local h1 {
+    body main .local h1 .fondo01{
         font-size: 50px;
     }
 
@@ -70,11 +70,9 @@
         font-size: 20px;
     }
 
-    body #pie ul li {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 10px;
+    body main #pie ul li img{
+        width: 75px;
+        height: 75px;
     }
     body main .promociones div div p {
         font-size: 13px;
@@ -96,7 +94,7 @@
     body main .lentes h2 {
         font-size: 30px;
     }
-    body main #pie ul div img{
+    body main #pie ul img{
         width: 90px;
         height: 90px;
     }
@@ -125,7 +123,7 @@
         display: flex;
         flex-direction: column;
     }
-    body main #pie ul div img{
+    body main #pie ul img{
         display: none;
     }
 
@@ -137,6 +135,9 @@
     body main .lentes .grid-container .grid-item {
         grid-column: span 1;
         grid-row: span 1;
+    }
+    body main .lentes .grid-container .grid-item p {
+        display: none;
     }
 }
 
@@ -192,7 +193,7 @@
         height: 20vh;
         width: auto;
     }
-    body main .local h1 {
+    body main .local h1 .fondo01{
         font-size: 30px;
     }
     body main .local p{

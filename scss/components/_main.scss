@@ -10,29 +10,36 @@ main{
     .local{
         height: 80vh;
         width: auto;
-        background-image: url("../img/fondo1.jpg");
+        background-image: url("../img/fondo1.webp");
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: scroll;
         flex-direction: column;
-        h1{@include text(center, none);
+        h1{
+            text-align:  center;
+            .fondo01{@include text(center, none);
+            color: $color-principal;            
             font-size: 100px;
             letter-spacing: 10px;
             font-style: normal;
             font-weight: bold;
             font-family: $fuente-principal;
-            color: $color-principal;
+            background-color: whitesmoke;
+            }
         }
-        p{text-decoration: none;
+        p{
             text-align: center;
-            font-size: 25px;
+            .fondo01{
+            text-decoration: none;
+            font-size: 25px; 
             letter-spacing: 5px;
             font-style: normal;
-            font-weight: 10;
+            font-weight: bold;
             font-family: $fuente-principal;
             color: $color-principal;
-            font-weight: bold;
+            background-color: whitesmoke;
+            }
         }
     }
     .grid-container1{
@@ -173,7 +180,7 @@ main{
             list-style: none;
             justify-content: flex-end;
             align-items:flex-end;
-            div img{
+            li img{
                 width: 200px;
                 height: 200px;
                 object-fit: contain;
@@ -201,8 +208,8 @@ main{
             transition: 5s;
             &:hover{
                 opacity: 1;
-                width: 30%;
-                height: 30%;
+                width: 20%;
+                height: 20%;
                 transform: translate(-70%);
             }
         }

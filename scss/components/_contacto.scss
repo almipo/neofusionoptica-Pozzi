@@ -1,6 +1,6 @@
 body{
     .formulario{
-        background-image: url(../img/imagencontactos.jpg) ;
+        background-image: url(../img/imagencontactos.webp) ;
         opacity: 0.75;
         object-fit: contain;
         background-position: top;
@@ -9,15 +9,16 @@ body{
         justify-content: center;
         align-items: center;
 
-        div{ 
-            display:block;
+        div { 
+            display: flexbox;
             .form-label{
             text-decoration: none;
             padding: 5px;
             font-size: 20px;
             font-style: normal;
             font-family: $fuente-principal;
-            color: white;
+            color:$color-tercero;
+            opacity: 0.75;
             text-align: center;
             margin: 10px;
             font-weight:700;
@@ -29,12 +30,15 @@ body{
                 padding: 5px 15px;
                 margin: 5px;
                 box-sizing: border-box;
+                display: inline-block;
                 justify-content: center;
                 align-items: center;
-
             }
         }
-        .botones{
+        .botones{ 
+            display: flexbox;
+            justify-content: center;
+
             input{
                 width: auto;
                 background-color: $color-principal;
@@ -47,7 +51,7 @@ body{
                 font-family: $fuente-principal;
                 font-size: 15;
                 font-weight: bold;
-                align-items: center;
+                display: inline-flex;
                 justify-content: center;
             }
         }

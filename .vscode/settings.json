@@ -4,5 +4,6 @@
         "titleBar.activeBackground": "#254801",
         "titleBar.activeForeground": "#F1FEE4"
     },
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "editor.stickyScroll.enabled": true
 }

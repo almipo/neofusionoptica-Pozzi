@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
 footer .redes-sociales {
   display: flex;
   justify-content: center; }
@@ -9,9 +8,6 @@ body header {
   body header img {
     width: 350px;
     height: 75px; }
-  body header nav div button .navbar-toggler {
-    background-color: #793a84;
-    opacity: 0.75; }
   body header nav div button .navbar-toggler-icon {
     color: white; }
   body header nav div div ul li .nav-item {
@@ -21,7 +17,7 @@ body header {
     padding: 10px; }
   body header nav div div ul li .nav-link {
     background-color: #793a84;
-    opacity: 0.60;
+    opacity: 0.75;
     text-decoration: none;
     font-size: 20px;
     text-align: center;
@@ -67,31 +63,35 @@ body main .bancos img {
 body main .local {
   height: 80vh;
   width: auto;
-  background-image: url("../img/fondo1.jpg");
+  background-image: url("../img/fondo1.webp");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
   flex-direction: column; }
   body main .local h1 {
-    text-align: center;
-    text-decoration: none;
-    font-size: 100px;
-    letter-spacing: 10px;
-    font-style: normal;
-    font-weight: bold;
-    font-family: "Roboto", sans-serif;
-    color: #793a84; }
+    text-align: center; }
+    body main .local h1 .fondo01 {
+      text-align: center;
+      text-decoration: none;
+      color: #793a84;
+      font-size: 100px;
+      letter-spacing: 10px;
+      font-style: normal;
+      font-weight: bold;
+      font-family: "Roboto", sans-serif;
+      background-color: whitesmoke; }
   body main .local p {
-    text-decoration: none;
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: 5px;
-    font-style: normal;
-    font-weight: 10;
-    font-family: "Roboto", sans-serif;
-    color: #793a84;
-    font-weight: bold; }
+    text-align: center; }
+    body main .local p .fondo01 {
+      text-decoration: none;
+      font-size: 25px;
+      letter-spacing: 5px;
+      font-style: normal;
+      font-weight: bold;
+      font-family: "Roboto", sans-serif;
+      color: #793a84;
+      background-color: whitesmoke; }
 
 body main .grid-container1 {
   display: grid;
@@ -213,7 +213,7 @@ body main #pie {
     list-style: none;
     justify-content: flex-end;
     align-items: flex-end; }
-    body main #pie ul div img {
+    body main #pie ul li img {
       width: 200px;
       height: 200px;
       object-fit: contain;
@@ -237,8 +237,8 @@ body main .boton-fixed img {
   transition: 5s; }
   body main .boton-fixed img:hover {
     opacity: 1;
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
     transform: translate(-70%); }
 
 footer .redes-sociales {
@@ -252,7 +252,7 @@ footer .redes-sociales {
       transform: scale(1.4); }
 
 body main .lentes {
-  background-image: url(../img/fondomadera.jpg);
+  background-image: url(../img/fondomadera.webp);
   opacity: 1;
   object-fit: contain;
   background-position: top;
@@ -277,15 +277,16 @@ body main .lentes {
     margin: 20px;
     text-align: center;
     border-radius: 15px;
-    background-color: white; }
+    background-color: white;
+    object-fit: scale-down; }
     body main .lentes div div div img {
       height: 150px;
       max-width: 180px;
-      border-radius: 15px 0px 0px 15px; }
+      border-radius: 15px 0px 0px 15px;
+      object-fit: contain; }
     body main .lentes div div div h3 {
-      background-image: linear-gradient(to bottom, #793a84, white);
-      text-decoration: none;
-      text-align: center;
+      background-color: #793a84;
+      padding: 5px;
       font-size: 20px;
       letter-spacing: 2px;
       font-style: normal;
@@ -296,12 +297,14 @@ body main .lentes {
     body main .lentes div div div p {
       text-align: center;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 14px;
       letter-spacing: 2px;
       font-style: normal;
       font-weight: bold;
       font-family: "Roboto", sans-serif;
-      color: #793a84; }
+      color: #793a84;
+      text-overflow: hidden;
+      margin: 5px; }
 
 body main .armazones h2 {
   background-color: #793a84;
@@ -383,13 +386,14 @@ body main .lentes .grid-container {
     text-align: center;
     border-radius: 15px;
     background-color: white;
-    overflow: auto;
+    overflow: hidden;
     align-items: center;
     box-shadow: 21px 22px 35px 20px rgba(0, 0, 0, 0.49);
     -moz-background-inline-policy: 21px 22px 35px 20px rgba(0, 0, 0, 0.49);
     -moz-box-shadow: 21px 22px 35px 20px rgba(0, 0, 0, 0.49); }
     body main .lentes .grid-container .grid-item img {
       width: 40%;
+      height: 60%;
       object-fit: contain; }
     body main .lentes .grid-container .grid-item h3 {
       background-color: #793a84;
@@ -403,13 +407,15 @@ body main .lentes .grid-container {
     body main .lentes .grid-container .grid-item p {
       text-align: center;
       text-decoration: none;
+      padding: 5px;
       font-size: 15px;
       letter-spacing: 2px;
       font-style: normal;
       font-weight: bold;
       font-family: "Roboto", sans-serif;
       color: #793a84;
-      padding: 10px; }
+      text-align: center;
+      text-overflow: ellipsis; }
   body main .lentes .grid-container .primer-item {
     grid-column-start: 1;
     grid-column-end: 2; }
@@ -430,7 +436,7 @@ body main .lentes .grid-container {
     grid-column-end: 5; }
 
 body .formulario {
-  background-image: url(../img/imagencontactos.jpg);
+  background-image: url(../img/imagencontactos.webp);
   opacity: 0.75;
   object-fit: contain;
   background-position: top;
@@ -439,7 +445,7 @@ body .formulario {
   justify-content: center;
   align-items: center; }
   body .formulario div {
-    display: block; }
+    display: flexbox; }
     body .formulario div .form-label {
       text-decoration: none;
       padding: 5px;
@@ -447,6 +453,7 @@ body .formulario {
       font-style: normal;
       font-family: "Roboto", sans-serif;
       color: white;
+      opacity: 0.75;
       text-align: center;
       margin: 10px;
       font-weight: 700; }
@@ -457,25 +464,29 @@ body .formulario {
       padding: 5px 15px;
       margin: 5px;
       box-sizing: border-box;
+      display: inline-block;
       justify-content: center;
       align-items: center; }
-  body .formulario .botones input {
-    width: auto;
-    background-color: #793a84;
-    border: none;
-    color: white;
-    padding: 16px 25px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-family: "Roboto", sans-serif;
-    font-size: 15;
-    font-weight: bold;
-    align-items: center;
+  body .formulario .botones {
+    display: flexbox;
     justify-content: center; }
+    body .formulario .botones input {
+      width: auto;
+      background-color: #793a84;
+      border: none;
+      color: white;
+      padding: 16px 25px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-family: "Roboto", sans-serif;
+      font-size: 15;
+      font-weight: bold;
+      display: inline-flex;
+      justify-content: center; }
 
 @media screen and (max-width: 1150px) {
-  body main #pie ul div img {
+  body main #pie ul li img {
     width: 150px;
     height: 150px; } }
 
@@ -487,13 +498,16 @@ body .formulario {
     padding: 4px; }
   body main .grid-container div p {
     font-size: 20px; }
-  body main #pie ul div img {
+  body main #pie ul li img {
     width: 125px;
     height: 125px; } }
 
 @media screen and (max-width: 864px) {
   body main .promociones div div p {
-    font-size: 16px; } }
+    font-size: 16px; }
+  body main #pie ul li img {
+    width: 95px;
+    height: 95px; } }
 
 @media screen and (max-width: 760px) {
   body main .lentes h2 {
@@ -503,10 +517,7 @@ body .formulario {
   body main .grid-container1 .galeria {
     --s: 200px; }
   body main .promociones div div p {
-    font-size: 13px; }
-  body main #pie ul div img {
-    width: 95px;
-    height: 95px; } }
+    font-size: 13px; } }
 
 @media screen and (max-width: 715px) {
   body header {
@@ -515,15 +526,13 @@ body .formulario {
   body header nav ul li {
     display: flex;
     flex-direction: column; }
-  body main .local h1 {
+  body main .local h1 .fondo01 {
     font-size: 50px; }
   body main .local p {
     font-size: 20px; }
-  body #pie ul li {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 10px; }
+  body main #pie ul li img {
+    width: 75px;
+    height: 75px; }
   body main .promociones div div p {
     font-size: 13px; } }
 
@@ -538,7 +547,7 @@ body .formulario {
     font-size: 16px; }
   body main .lentes h2 {
     font-size: 30px; }
-  body main #pie ul div img {
+  body main #pie ul img {
     width: 90px;
     height: 90px; } }
 
@@ -556,14 +565,16 @@ body .formulario {
   body main #pie {
     display: flex;
     flex-direction: column; }
-  body main #pie ul div img {
+  body main #pie ul img {
     display: none; }
   body main .lentes .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 250px; }
   body main .lentes .grid-container .grid-item {
     grid-column: span 1;
-    grid-row: span 1; } }
+    grid-row: span 1; }
+  body main .lentes .grid-container .grid-item p {
+    display: none; } }
 
 @media screen and (max-width: 537px) {
   body main .lentes h2 {
@@ -598,7 +609,7 @@ body .formulario {
   body main .local {
     height: 20vh;
     width: auto; }
-  body main .local h1 {
+  body main .local h1 .fondo01 {
     font-size: 30px; }
   body main .local p {
     font-size: 15px; }
